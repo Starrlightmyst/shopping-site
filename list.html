@@ -58,6 +58,12 @@
         </div>
       </div>
     </div>
+    <ul class="sp_menu">
+          <li><a href="#">ログイン</a></li>
+          <li><a href="#">カート</a></li>
+          <li><a href="#">マイページ</a></li>
+          <li><a href="#">ショッピングガイド</a></li>
+        </ul>
   </header>
 
 <div class="container" id="maincontents">
@@ -157,7 +163,7 @@
             <div class="group">
         <div class="wrapper wrapper-bottom"><div class="u-full-width">
                 <h5>お届けについて</h5>
-                <img src="images\top\otodoke_banner.png" alt="">
+                <div class="shipping"><img src="images\top\otodoke_banner.png" alt=""></div>
                 <p><span>■○○運輸</span><br>送料￥000円</p>
                 <p></p>
                 <p><span>■ゆうパケット</span><br>ポスト投函となります。日時指定不可<p>
@@ -198,7 +204,7 @@
           <div class="aside-about">
             <img class="full-image"src="images\top\about_img.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, porro?</p>
-            <a href="#"><img class="more" src="images\top\more_btn.png" alt=""></a>
+            <div class="more"><a href="#"><img src="images\top\more_btn.png" alt=""></a></div>
           </div>
 
           
@@ -208,7 +214,7 @@
           <div class="aside-about">
             <img class="full-image" src="images\top\shopinfo_img.jpg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, porro?</p>
-            <a href="#"><img class="more" src="images\top\more_btn.png" alt=""></a>
+            <div class="more"><a href="#"><img src="images\top\more_btn.png" alt=""></a></div>
           </div>
         </div>
 </div>
@@ -252,6 +258,11 @@
 });
 </script>
 
+<script>$(document).ready(function(){
+  $("#sp-navi").click(function(){
+    $(".sp_menu").slideToggle();
+  });
+});</script>
 
 
 

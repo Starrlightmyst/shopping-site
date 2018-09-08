@@ -93,7 +93,7 @@ a {
 
 .wrapper2 {
   background: #fff;
-  padding: 1.3em;
+  padding: 1em;
   margin-bottom: 5px;
 }
 
@@ -119,6 +119,8 @@ a {
 
 .side-navi li{
   list-style: none;
+  font-size:.7em;
+  padding: .8em;
 }
 
 .arrow {
@@ -129,8 +131,8 @@ a {
 
 .toparrow {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: .8em;
+  right: .8em;
   float: right;
 }
 
@@ -142,7 +144,7 @@ a {
 .sidebar2,
 .sidebar3 {
   background: #887f69;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   margin-top: 5px;
   position: relative;
 }
@@ -156,7 +158,7 @@ a {
 .aside-about,
 .aside-info {
   padding: 0.5em;
-  width: 94%;
+  box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -230,6 +232,38 @@ span {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+/*----------------------------------SP MENU--------------------------------------*/
+.sp_menu {
+  display:none;
+}
+
+.sp_menu{
+  background:#ff6d77;
+  width:100%;
+  margin:0;
+  text-align: left;
+}
+
+.sp_menu li {
+  padding: 1em 0;
+}
+
+.sp_menu a {
+  color: #fff;
+  font-weight: normal;
+}
+
+.sp_menu li {
+  border-top: 1px solid #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ .sp_menu li:first-child {
+  border-top:none;
+}
+
+
 
 
 /*-------------------------------Media Queries------------------------------*/
@@ -323,6 +357,10 @@ span {
   
   .wrapper-bottom {
     width: 100%;
+  }
+  
+  .shipping {
+    max-width: 50%;
   }
 }
   
